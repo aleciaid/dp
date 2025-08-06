@@ -172,7 +172,7 @@ export default function PaymentProofUpload({ invoiceNumber }: PaymentProofUpload
 
       console.log('Sending data to webhook:', webhookData) // For debugging
 
-      const response = await fetch('https://n8n.topsell.co.id/webhook-test/inbound_invoices', {
+      const response = await fetch('https://n8n.topsell.co.id/webhook/inbound_invoices', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
